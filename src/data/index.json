@@ -1,51 +1,25 @@
 {
-  "skills": [
-    {
-      "id": "1",
-      "src": "./img/product-chain-1.png",
-      "title": "Languages",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
-    },
-    {
-      "id": "2",
-      "src": "./img/tag-1.png",
-      "title": "Web-Dev",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
-    },
-    {
-      "id": "3",
-      "src": "./img/feather-pen-2.png",
-      "title": "Blockchain",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
-    },
-    {
-      "id": "4",
-      "src": "./img/feather-pen-1.png",
-      "title": "Tools",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
-    }
-  ],
   "portfolio": [
     {
       "id": "1",
-      "src": "./img/placeholder-image.png",
-      "title": "Ahuse",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-      "link": "View In Github"
+      "src": "./img/Swar.png",
+      "title": "Swar: Decentralized Music Streaming",
+      "description": "A Decentralized music streaming platform using Blockchain and ML",
+      "link": "https://github.com/scanda-shetty/Bitcrew"
     },
     {
       "id": "2",
-      "src": "./img/placeholder-image-1.png",
-      "title": "App Dashboard",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-      "link": "View In Github"
+      "src": "./img/bot.png",
+      "title": "Harmony: A Mental Health App",
+      "description": "A Mental Health App which identifies mental health issues and also features a conversational bot using a Llama 2.0 model",
+      "link": "/"
     },
     {
       "id": "3",
-      "src": "./img/placeholder-image-2.png",
-      "title": "Easy Rentn",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-      "link": "View In Github"
+      "src": "./img/vote.png",
+      "title": "Voting System using Blockchain",
+      "description": "Secure Voting System built using Blockchain Technology and involves Voter Authentication",
+      "link": "https://github.com/scanda-shetty/E-Voting-System-using-Blockchain"
     }
   ],
   "testimonial": [

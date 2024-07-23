@@ -19,7 +19,7 @@ export default function HeroSection() {
           <ul>
             <li>
               <a
-                href="https://www.instagram.com/"
+                href="https://www.instagram.com/skanda_shetty10"
                 className="navbar--content"
                 target="_blank"
                 rel="noreferrer"
@@ -42,7 +42,7 @@ export default function HeroSection() {
             </li>
             <li>
               <a
-                href="https://www.twitter.com/"
+                href="https://x.com/ShettySkanda"
                 className="navbar--content"
                 target="_blank"
                 rel="noreferrer"
@@ -63,7 +63,7 @@ export default function HeroSection() {
             </li>
             <li>
               <a
-                href="https://www.linkedin.com/"
+                href="https://www.linkedin.com/in/skanda-shetty-79b402229/"
                 className="navbar--content"
                 target="_blank"
                 rel="noreferrer"
