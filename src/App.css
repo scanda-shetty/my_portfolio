@@ -132,7 +132,7 @@ h2 {
 /* Skills & About Me */
 .section--title {
   color: var(--heading-color);
-  font-size: 21px;
+  font-size: 31px;
   text-align: center;
   font-style: normal;
   font-weight: 600;
@@ -187,7 +187,7 @@ h2 {
 /* Navbar Styler Ends */
 
 /* Hero Section Style */
-.hero--section {
+.hero {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   padding: 133.333px 85.333px 133.333px;
@@ -196,35 +196,35 @@ h2 {
   gap: 32px;
   background-color: var(--bg-shade);
 }
-.hero--section--content-box {
+.hero1 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 32px;
 }
-.hero--section--content {
+.hero2 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 21.333px;
 }
-.hero--section--content--box > button {
+.hero1 > button {
   margin-top: 21.333px;
 }
-.hero--section--title {
+.heroTitle {
   color: var(--heading-color);
-  font-size: 74.667px;
-  font-weight: 700;
+  font-size: 44.667px;
+  font-weight: 600;
   line-height: 90px;
   align-self: stretch;
 }
-.hero--section--title--color {
+.heroTitle--color {
   color: var(--primary);
 }
-.hero--section-description {
+.heroDesc {
   color: var(--darkblue);
-  font-size: 24px;
-  font-weight: 400;
+  font-size: 20px;
+  font-weight: 500;
   line-height: 36px;
 }
 .hero--section--img {
@@ -237,7 +237,7 @@ h2 {
 /* Hero Section Style Ends */
 
 /* Skills Section Style */
-.skills--section {
+.skills {
   display: flex;
   padding: 149.33px 85.33px;
   flex-direction: column;
@@ -245,20 +245,20 @@ h2 {
   align-items: flex-start;
   gap: 106.667px;
 }
-.skills--section--heading {
+.skill {
   color: var(--heading-color);
   font-size: 64px;
   font-weight: 700;
   line-height: 77px;
 }
-.skills--section--container {
+.skills1 {
   display: grid;
   justify-content: center;
   align-items: flex-start;
   gap: 42.6px;
   grid-template-columns: repeat(4, 1fr);
 }
-.skills--section--card {
+.skillsCard {
   display: flex;
   padding: 32px;
   flex-direction: column;
@@ -269,13 +269,13 @@ h2 {
   background: var(--bg-shade);
   min-height: 250px;
 }
-.skills--section--card:hover {
+.skillsCard:hover {
   border-bottom: 4px solid var(--primary);
 }
-.skills--section--card:hover .skills--section--description {
+.skillsCard:hover .skillsDesc {
   color: var(--darkblue);
 }
-.skills--section--img {
+.skillsImg {
   display: flex;
   padding: 13.3px;
   justify-content: center;
@@ -285,20 +285,20 @@ h2 {
   background: #fff;
   box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.1);
 }
-.skills--section--card--content {
+.skillsContent {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 32px;
   align-self: stretch;
 }
-.skills--section--title {
+.skillsTitle {
   color: var(--heading-color);
   font-size: 32px;
   font-weight: 700;
   line-height: 45px;
 }
-.skills--section--description {
+.skillsDesc {
   color: var(--black);
   font-size: 21.3px;
   font-style: normal;
@@ -308,7 +308,7 @@ h2 {
 /* Skills Style Ends */
 
 /* About Us */
-.about--section {
+.about {
   display: grid;
   padding: 133.3px 85.3px;
   align-items: center;
@@ -322,7 +322,7 @@ h2 {
 /* About Us Ends */
 
 /* My Portfolio Starts */
-.portfolio--section {
+.portfolio1 {
   display: flex;
   padding: 112px 85px;
   flex-direction: column;
@@ -341,21 +341,21 @@ h2 {
   align-items: flex-start;
   gap: 21.3px;
 }
-.portfolio--section--container {
+.portfolio2 {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 42.6px;
   width: 100%;
 }
-.portfolio--section--img {
+.portfolioImg {
   border-radius: 8px;
   width: 100%;
 }
-.portfolio--section--img > img {
+.portfolioImg > img {
   width: 100%;
 }
-.portfolio--section--card {
+.portfolioCard {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -367,7 +367,7 @@ h2 {
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
 }
-.portfolio--section--card--content {
+.portfolioContent {
   display: flex;
   padding: 32px;
   flex-direction: column;
@@ -375,7 +375,7 @@ h2 {
   gap: 32px;
   align-self: stretch;
 }
-.portfolio--section--title {
+.portfolioTitle {
   color: var(--heading-color);
 }
 .portfolio--link {
@@ -386,7 +386,7 @@ h2 {
   padding-bottom: 10.6px;
   font-weight: 600;
 }
-.portfolio--section--card:hover path {
+.portfolioCard:hover path {
   stroke: #006b6a;
 }
 /* Portfolio Ends */
@@ -413,7 +413,7 @@ h2 {
   border-radius: 8px;
   border: 1.33px solid #006b6a;
 }
-.testimonial--section--card--reviews {
+.testimonialContents {
   display: flex;
   align-items: flex-start;
   gap: 5.33px;
@@ -562,35 +562,35 @@ input[type="checkbox"] {
 
 /* Responsive Screens */
 @media only screen and (max-width: 1800px) {
-  .hero--section--title {
-    font-size: 68px;
+  .heroTitle {
+    font-size: 48px;
     line-height: 70px;
   }
-  .skills--section--title {
+  .skillsTitle {
     font-size: 28px;
     line-height: 40px;
   }
 }
 
 @media only screen and (max-width: 1600px) {
-  .skills--section--heading {
+  .skill {
     font-size: 54px;
     line-height: 70px;
   }
-  .skills--section--container {
+  .skills1 {
     gap: 16px;
   }
-  .skills--section--card {
+  .skillsCard {
     gap: 28px;
   }
-  .skills--section--card--content {
+  .skillsContent {
     gap: 20px;
   }
-  .skills--section--title {
+  .skillsTitle {
     font-size: 23px;
     line-height: 30px;
   }
-  .skills--section--description {
+  .skillsDesc {
     font-size: 17.333px;
     line-height: 27px;
   }
@@ -600,19 +600,19 @@ input[type="checkbox"] {
   .btn-outline-primary {
     display: none;
   }
-  .hero--section {
+  .hero {
     display: flex;
     flex-direction: column-reverse;
     padding-bottom: 70px;
   }
-  .hero--section--title,
-  .hero--section-description,
+  .heroTitle,
+  .heroDesc,
   .footer--content {
     text-align: center;
   }
-  .skills--section--container,
-  .about--section,
-  .portfolio--section--container,
+  .skills1,
+  .about,
+  .portfolio2,
   .portfolio--container-box,
   .footer--link--container,
   .footer--items > ul,
@@ -620,16 +620,16 @@ input[type="checkbox"] {
     display: flex;
     flex-direction: column;
   }
-  .skills--section,
+  .skills,
   .portfolio--container,
-  .hero--section--content,
-  .hero--section--content--box {
+  .hero2,
+  .hero1 {
     align-items: center;
   }
   .portfolio--container-box {
     gap: 30px;
   }
-  .skills--section,
+  .skills,
   .testimonial--section,
   .contact--section,
   .footer--container {
@@ -637,7 +637,7 @@ input[type="checkbox"] {
     padding-top: 70px;
     padding-bottom: 70px;
   }
-  .about--section {
+  .about {
     gap: 20px;
     padding-top: 0;
     padding-bottom: 0;
@@ -645,13 +645,13 @@ input[type="checkbox"] {
   .testimonial--section--card {
     padding: 25px;
   }
-  .hero--section--title,
-  .skills--section--heading,
+  .heroTitle,
+  .skill,
   .sections--heading {
     font-size: 35px;
     line-height: 40px;
   }
-  .hero--section--content--box {
+  .hero1 {
     gap: 10px;
   }
   .contact--form--container {

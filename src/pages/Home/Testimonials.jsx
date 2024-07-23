@@ -9,10 +9,10 @@ export default function Testimonial() {
           <h2 className="sections--heading">Customer Feedback</h2>
         </div>
       </div>
-      <div className="portfolio--section--container">
+      <div className="portfolio2">
         {data?.testimonial?.map((item, index) => (
           <div key={index} className="testimonial--section--card">
-            <div className="testimonial--section--card--review">
+            <div className="testimonialContent">
               {Array.from({ length: 5 }, (reviews, index) => (
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

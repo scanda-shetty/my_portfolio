@@ -1,23 +1,18 @@
 export default function AboutMe() {
   return (
-    <section id="AboutMe" className="about--section">
-      <div className="about--section--img">
+    <section id="AboutMe" className="about">
+      {/* <div className="about--section--img">
         <img src="./img/about-me.png" alt="About Me" />
-      </div>
-      <div className="hero--section--content--box about--section--box">
-        <div className="hero--section--content">
+      </div> */}
+      <div className="hero1 about--section--box">
+        <div className="hero2">
           <p className="section--title">About</p>
-          <h1 className="skills-section--heading">About Me</h1>
-          <p className="hero--section-description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
-            officiis sit debitis omnis harum sed veniam quasi dicta accusamus
-            recusandae? Voluptatem, reprehenderit alias? Eligendi aperiam
-            tempora numquam sint odit optio.
+          <h1 className="skills-section--heading">Skanda S Shetty</h1>
+          <p className="heroDesc">
+          I am pursuing my B.Tech in Computer Science and Engineering at PES University. With a focus on real-world applications, I aspire professional experiences in various industries and domains. I am passionate about contributing and making an impact by utilizing my expertise.
           </p>
-          <p className="hero--section-description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
-            officiis sit debitis omnis harum sed veniam quasi dicta accusamus
-            recusandae?
+          <p className="heroDesc">
+          I am continously driven by a pursuit of skill enhancement and problem-solving. I'm lucky to have shared space with many talented individuals who have helped me learn and explore different aspects of technology and community.
           </p>
         </div>
       </div>

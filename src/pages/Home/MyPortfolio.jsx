@@ -2,7 +2,7 @@ import data from "../../data/index.json";
 
 export default function MyPortfolio() {
   return (
-    <section className="portfolio--section" id="MyPortfolio">
+    <section className="portfolio1" id="MyPortfolio">
       <div className="portfolio--container-box">
         <div className="portfolio--container">
           <p className="sub--title">Recent Projects</p>
@@ -28,15 +28,15 @@ export default function MyPortfolio() {
           </button>
         </div>
       </div>
-      <div className="portfolio--section--container">
+      <div className="portfolio2">
         {data?.portfolio?.map((item, index) => (
-          <div key={index} className="portfolio--section--card">
-            <div className="portfolio--section--img">
+          <div key={index} className="portfolioCard">
+            <div className="portfolioImg">
               <img src={item.src} alt="Placeholder" />
             </div>
-            <div className="portfolio--section--card--content">
+            <div className="portfolioContent">
               <div>
-                <h3 className="portfolio--section--title">{item.title}</h3>
+                <h3 className="portfolioTitle">{item.title}</h3>
                 <p className="text-md">{item.description}</p>
               </div>
               <p className="text-sm portfolio--link">
