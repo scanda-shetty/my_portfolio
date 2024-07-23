@@ -30,6 +30,8 @@ export default function HeroSection() {
                   height="32"
                   viewBox="0 0 33 33"
                   fill="none"
+                  stroke="currentColor"
+
                 >
                   <path
                     fill-rule="evenodd"

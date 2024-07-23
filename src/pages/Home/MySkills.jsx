@@ -3,7 +3,7 @@ export default function MySkills() {
     <section className="skills" id="mySkills">
       {/* Skills Heading */}
       <div className="skillsHeader">
-        <p className="section--title">My Skills</p>
+        <p className="section--title" style={{paddingLeft:'35px'}}>My Skills</p>
       </div>
 
       {/* Skills Sections */}
