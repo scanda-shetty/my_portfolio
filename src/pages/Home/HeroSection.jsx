@@ -1,9 +1,62 @@
+import React, { useEffect } from 'react';
 export default function HeroSection() {
+  useEffect(() => {
+// Preloader fade-out logic
+window.addEventListener('load', () => {
+  const preloader = document.getElementById('preloader');
+  if (preloader) {
+    setTimeout(() => {
+      preloader.style.opacity = '0';
+      preloader.style.transition = 'opacity 1.5s ease';
+      setTimeout(() => {
+        preloader.remove();
+      }, 5000); // Match the opacity transition duration
+    }, 1000); // Optional delay before starting the fade-out
+  }
+    
+    const typedElement = document.querySelector('.code-box__typed');
+    if (typedElement) {
+      const code = [
+        "(<App />,document.getElementById('root');"
+      ];
+
+      let lineIndex = 0;
+      let charIndex = 0;
+
+      function typeLine() {
+        if (lineIndex < code.length) {
+          const currentLine = code[lineIndex];
+          typedElement.textContent = currentLine.substring(0, charIndex + 1);
+
+          charIndex++;
+          if (charIndex < currentLine.length) {
+            setTimeout(typeLine, 120); // Adjust typing speed here
+          } else {
+            charIndex = 0;
+            lineIndex++;
+            if (lineIndex >= code.length) {
+              lineIndex = 0; // Reset to the first line
+              typedElement.textContent = ''; // Clear text if needed
+
+            }
+            setTimeout(typeLine, 1000);
+            typedElement.textContent += '\n'; // Move to the next line
+
+          }
+        }
+      }
+
+      typeLine();
+    }
+  });
+  }, []);
+
   return (
     <section id="heroSection" className="hero">
+    <div id="preloader" className="preloader"></div>
       <div className="hero1">
         <div className="hero2">
-          <p className="section--title">Hey, I'm &nbsp;<span style={{ color: 'red' }}>Skanda</span>👋</p>
+          <p className="section--title">Hey, I'm &nbsp;<span style={{ color: '#5e3bee' }}>Skanda</span>👋</p>
           <h2 className="heroTitle">
             <br />
             Welcome to my Portfolio
@@ -11,14 +64,13 @@ export default function HeroSection() {
           <p className="heroDesc">
           Aspiring software engineer with a passion for coding and creating innovative tech solutions
           <br />
-          <span style={{ color: 'red' }}>🧑‍💻Coding Enthusiast | Web Developer | Blockchain | AI/ML</span>
+          <span style={{ color: '#5e3bee' }}>🧑‍💻Coding Enthusiast | Web Developer | Blockchain | AI/ML</span>
           </p>
         </div>
-        {/* <button className="btn btn-primary">Get In Touch</button> */}
         <div className="footer--social--icon">
           <ul>
             <li>
-            <a
+            <a 
                 href="https://github.com/scanda-shetty"
                 className="navbar--content"
                 target="_blank"
@@ -101,6 +153,49 @@ export default function HeroSection() {
       {/* <div className="hero--section--img">
         <img src="./img/pic1.jpeg" alt="Hero Section" />
       </div> */}
+      <div className="c-home-hero__img">
+        <div wf-element="codebox" className="code-box">
+          <img src="https://cdn.prod.website-files.com/629e4fe96456f848f903e7ef/65363d13a52464f1154ef60f_dots-window.svg" loading="lazy" alt="" className="code-box__dots" />
+          <div className="code-box__line-wrp">
+          <div className="code-box__line-code">
+              <span className="is--code-red" style={{ color: '#c7189e' }}>import &nbsp;</span> 
+              <span className="is--code-blue1" style={{ color: '#28c0e6' }}>React &nbsp;</span> 
+              <span className="is--code-red" style={{ color: '#c7189e' }}>from &nbsp;</span> 
+              <span className="is--code-blue1" style={{ color: 'orange' }}>'react';</span>
+            </div>
+          </div>
+          <div className="code-box__line-wrp">
+            <div className="code-box__line-code">
+              <span className="is--code-red" style={{ color: '#c7189e' }}>import &nbsp;</span> 
+              <span className="is--code-blue1" style={{ color: '#28c0e6' }}>ReactDOM &nbsp;</span> 
+              <span className="is--code-red" style={{ color: '#c7189e' }}>from &nbsp;</span> 
+              <span className="is--code-red" style={{ color: 'orange' }}>'react-dom';</span> 
+            </div>
+          </div>
+          <div className="code-box__line-wrp">
+            <div className="code-box__line-code">
+              <span className="is--code-red" style={{ color: '#c7189e' }}>import &nbsp;</span> 
+              <span className="is--code-blue1" style={{ color: '#28c0e6' }}>App &nbsp;</span> 
+              <span className="is--code-red" style={{ color: '#c7189e' }}>from &nbsp;</span>
+              <span className="is--code-red" style={{ color: 'orange' }}>'./App.js';</span> 
+            </div>
+          </div>
+          <div className="code-box__line-wrp">
+            <div className="code-box__line-code">
+              <span className="is--code-red"> &nbsp;</span> 
+            </div>
+          </div>
+          <div className="code-box__line-wrp">
+            <div className="code-box__line-code">
+              <span className="is--code-red" style={{ color: '#28c0e6' }}>ReactDOM</span> 
+              <span className="is--code-blue1" style={{ color: 'yellow' }}>.render</span> 
+              <span id="typed" data-typed="true" className="code-box__typed"></span>
+              <span className="code-box__cursor">&nbsp;</span>
+            </div>
+          </div>
+          <div className="code-box__fake-scrollbar"></div>
+        </div>
+      </div>
     </section>
   );
 }

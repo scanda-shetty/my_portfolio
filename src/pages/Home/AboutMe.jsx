@@ -1,9 +1,39 @@
+import React, { useEffect } from 'react';
+
 export default function AboutMe() {
+  useEffect(() => {
+    const aboutSection = document.querySelector('.about');
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        } else {
+          entry.target.classList.remove('visible');
+        }
+      },
+      {
+        threshold: 0.2, // Trigger when 20% of the section is visible
+      }
+    );
+
+    if (aboutSection) {
+      observer.observe(aboutSection);
+    }
+
+    // Clean up observer on component unmount
+    return () => {
+      if (aboutSection) {
+        observer.unobserve(aboutSection);
+      }
+    };
+  }, []);
+
   return (
     <section id="AboutMe" className="about">
     <div className="about1">
       <div className="about--section--img">
-        <img src="./img/pic1.jpeg" alt="About Me" />
+        <img src="./img/pic1.jpeg" alt="About Me" style={{zIndex:'15'}}/>
       </div>
       <div className="hero1 about--section--box">
         <div className="hero2">
