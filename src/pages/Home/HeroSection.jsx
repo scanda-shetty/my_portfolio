@@ -7,7 +7,7 @@ window.addEventListener('load', () => {
   if (preloader) {
     setTimeout(() => {
       preloader.style.opacity = '0';
-      preloader.style.transition = 'opacity 1.5s ease';
+      preloader.style.transition = 'opacity 12.5s ';
       setTimeout(() => {
         preloader.remove();
       }, 5000); // Match the opacity transition duration
@@ -53,7 +53,7 @@ window.addEventListener('load', () => {
 
   return (
     <section id="heroSection" className="hero">
-    <div id="preloader" className="preloader"></div>
+    {/* <div id="preloader" className="preloader"></div> */}
       <div className="hero1">
         <div className="hero2">
           <p className="section--title">Hey, I'm &nbsp;<span style={{ color: '#5e3bee' }}>Skanda</span>👋</p>
